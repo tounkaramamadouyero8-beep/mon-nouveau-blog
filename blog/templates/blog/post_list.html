@@ -2,10 +2,18 @@
 <html>
     <head>
         <title>Blog Django Girls</title>
+        
     </head>
     <body>
         <header>
             <h1><a href="/">Blog Django Girls</a></h1>
+            {% for post in posts%}
+                <article>
+                    <time>publication:{{ post.published_date}}</time>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </article>
+            {% endfor %}
         </header>
 
         <article>
