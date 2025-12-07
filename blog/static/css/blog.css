@@ -1,0 +1,99 @@
+
+.page-header {
+    background-color: #f8f3f0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #f3a006;
+    font-size: 36pt;
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #e9790a;
+    background: none;
+    border-color: #e28813;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #f89706;
+}
+
+/* Image miniature avec effet au survol */
+.post-image-mini {
+    width: 160px !important;
+    height: 100px !important;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 5px;
+}
+
+/* Différentes tailles d'images */
+.img-xs { width: 80px; height: 60px; }      /* Extra small */
+.img-sm { width: 150px; height: 100px; }    /* Small */
+.img-md { width: 250px; height: 150px; }    /* Medium */
+.img-lg { width: 400px; height: 250px; }    /* Large */
+
+/* Classe commune */
+.post-image {
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    display: inline-block;
+}

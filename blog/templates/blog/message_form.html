@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laisser un message</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f2f2f2;
+padding: 40px;
+}
+.container {
+max-width: 500px;
+margin: auto;
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 { text-align: center; }
+label { display: block; margin-top: 15px; font-weight: bold; }
+input, textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+button {
+margin-top: 20px;
+width: 100%;
+padding: 12px;
+background: #4CAF50;
+color: #fff;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background: #43a047;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+<h2>💬 Laisser un message</h2>
+<form method="POST" action="{% url 'message_form' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Envoyer</button>
+    <a href="/" 
+   style="display:inline-block; margin-top:20px; padding:10px 20px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px;">
+    ⬅ Retour à l'accueil
+</a>
+</form>
+
+</div>
+
+
+</body>
+</html>
